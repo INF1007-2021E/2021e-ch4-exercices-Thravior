@@ -29,8 +29,11 @@ def get_number_of_char(string: str, char: str) -> int:
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-
-    return sentence.split(' ').count(word)
+    temp = 0
+    for words in sentence.split(' ')
+        if words == word:
+            temp += 1
+    return temp
 
 
 def main() -> None:
