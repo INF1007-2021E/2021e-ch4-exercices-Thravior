@@ -7,11 +7,7 @@ def is_even_len(string: str) -> bool:
 
 
 def remove_third_char(string: str) -> str:
-    temporaire = []
-    for i in range(len(string)):
-        if i%3 != 2:
-            temporaire.append(string[i])
-    return ''.join(temporaire)
+    return string[:2] + string[3:]
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
